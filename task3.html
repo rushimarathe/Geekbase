@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,6 +71,7 @@
         }
     </style>
 </head>
+
 <body>
     <form>
         <h1>Sign up</h1>
@@ -77,12 +79,16 @@
         Email
         <input type="email" name="email" id="email" required placeholder="Enter the email"><br>
         Password
-        <input type="password" name="password" id="password" required placeholder="Enter the password"><br>
+        <input type="password" name="password" id="password" required placeholder="Enter the password" minlength="8"
+            maxlength="20" pattern=".{8,}" title="Password must be between 8 and 20 characters"><br>
         Repeat Password
-        <input type="password" name="re-password" id="re-password" required placeholder="Enter the password again"><br>
-        <input type="checkbox"> 
+        <input type="password" name="re-password" id="re-password" required placeholder="Enter the password again"
+            minlength="8" maxlength="20" pattern=".{8,}" title="Password must be between 8 and 20 characters"><br>
+        <input type="checkbox">
         Remember me <br>
         <button>Submit</button>
     </form>
+
 </body>
+
 </html>
